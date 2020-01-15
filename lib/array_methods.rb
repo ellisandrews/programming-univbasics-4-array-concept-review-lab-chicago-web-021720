@@ -18,5 +18,15 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  puts "ellis"
+  min_value = 0  # Initialize a variable to store min value
+  array.length.times do |index|
+    if index == 0
+      min_value = array[index]
+    end
+    
+    if array[index] < min_value
+      min_value = array[index]
+    end
+  end
+  min_value
 end
